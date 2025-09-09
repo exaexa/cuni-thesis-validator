@@ -3,13 +3,14 @@ name: Build and publish a docker image
 on:
   push:
     branches: [ master ]
+  workflow_dispatch:
 
 jobs:
   docker_publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: macbre/push-to-ghcr@master
+      - uses: macbre/push-to-ghcr@v16
         with:
           image_name: ${{ github.repository }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
