@@ -16,13 +16,13 @@ accordingly.
 
 First, pull the docker image:
 ```sh
-docker pull ghcr.io/mff-cuni-cz/cuni-thesis-validator:latest
+docker pull ghcr.io/exaexa/cuni-thesis-validator:latest
 ```
 
 Run the verification:
 ```sh
 cd path/to/thesis/directory/with/thesis/pdf
-docker run -v $PWD:/thesis ghcr.io/mff-cuni-cz/cuni-thesis-validator verify /thesis/thesis.pdf |grep validationReports
+docker run -v $PWD:/thesis ghcr.io/exaexa/cuni-thesis-validator verify /thesis/thesis.pdf |grep validationReports
 ```
 
 ## Building the container
