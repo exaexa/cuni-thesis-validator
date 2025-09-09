@@ -527,7 +527,7 @@
             </error>
             <references/>
         </rule>
-        <!--<rule object="PDExtGState">
+        <rule object="PDExtGState">
             <id specification="ISO_19005_2" clause="6.2.5" testNumber="1"/>
             <description>An ExtGState dictionary shall not contain the TR key</description>
             <test>TR == null</test>
@@ -548,7 +548,7 @@
                 </arguments>
             </error>
             <references/>
-        </rule>-->
+        </rule>
         <rule object="PDExtGState">
             <id specification="ISO_19005_2" clause="6.2.5" testNumber="3"/>
             <description>An ExtGState dictionary shall not contain the HTP key</description>
