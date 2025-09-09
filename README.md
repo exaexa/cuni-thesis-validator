@@ -3,7 +3,12 @@
 This image is meant to check the validity of provided PDF/A files according to
 university provided profile.
 
-Read more about validation here: [cuni.cz](https://cuni.cz/UK-7987.html)
+Read more about validation here: [cuni.cz/UK-7987](https://cuni.cz/UK-7987.html)
+
+The validation profile file (currently `UK-7987-version1-custom9.xml`) and the
+VeraPDF version are taken from the above page. If you spot a new version of the
+file, please open an issue here so that the docker image can be updated
+accordingly.
 
 # Usage
 
